@@ -30,3 +30,10 @@ then
 else
 	echo "folder doesn't exist"
 fi
+
+
+echo -e "Enter file name: \c"
+read file_name1
+if [[ ! -f $file_name1 ]]; then # using '!' to check if file doesn't exist
+	echo "file doesn't exist"
+fi
