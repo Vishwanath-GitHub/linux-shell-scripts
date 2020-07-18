@@ -18,7 +18,8 @@ read -p 'what is your name: ' username_var
 echo "Your name is: $username_var"
 
 # Hiding the values entered in user input (for entering passwords)
-read -p 'type you username: ' user1
-read -sp 'type you password: ' pass # '-sp' will not show whatever is being typed
+read -p 'type your username: ' user1
+read -sp 'type your password: ' pass # '-sp' will not show whatever is being typed
+echo # 'echo' with nothing provided returns a blank line
 echo "Your username is: $user1"
 echo "Your password is: $pass"
