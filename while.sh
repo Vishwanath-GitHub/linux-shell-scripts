@@ -21,3 +21,5 @@ while (( $num <= 12 )); do # using mathematical conditional operators
 	echo $num
 	(( num++ ))
 done
+
+# making a loop infinite will drastically increase CPU usage
