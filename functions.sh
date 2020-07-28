@@ -28,3 +28,23 @@ for i in {1..5}; do
 	}
 	funcwithfor
 done
+
+echo
+
+# all variables are generally global in shell script
+# but it is possible to mention them locally and use these local variables
+function funcforvar() {
+	value=$2
+	echo $value
+}
+
+funcforvar first second
+
+# defining local variables within function
+function funcforlocal() {
+	local name="vishu"
+	echo $name
+}
+
+name="rishabh"
+funcforlocal name # even the variable's value is changed globally, local value is printed
