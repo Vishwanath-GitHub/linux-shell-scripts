@@ -56,3 +56,9 @@ done
 for i in {a..z}; do
 	mkdir $i
 done
+
+
+# removing individual folders with alphabetic names
+for i in {a..z}; do
+	rm -rf $i
+done
