@@ -51,3 +51,8 @@ for item in *; do
 		echo $item
 	fi
 done
+
+# creating individual folders with alphabetic names
+for i in {a..z}; do
+	mkdir $i
+done
